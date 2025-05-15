@@ -34,7 +34,7 @@ body {
 
 .title-back-text {
   text-transform: capitalize;
-  color: var(--color-primary-light);
+  color: var(--color-primary);
   font-family: var(--secondary-font);
   font-size: 8rem;
   font-weight: bold;
