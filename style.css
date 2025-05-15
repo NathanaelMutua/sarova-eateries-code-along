@@ -55,3 +55,79 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header-logo-link-wrapper {
+  text-decoration: none;
+  color: var(--color-black-main);
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.menu-toggle-button {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header-nav-list {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header-navigation {
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+  }
+
+  .header-nav {
+    /* background-color: green; */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    /* transform: translateX(500px); */
+    display: none;
+  }
+
+  .menu-toggle-button {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0.5rem;
+  }
+}
+
+.header-nav-list-item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black-main);
+  font-weight: 600;
+}
+
+.header-cta-btn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
