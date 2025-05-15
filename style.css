@@ -27,6 +27,45 @@ body {
   font-family: var(--primary-font);
 }
 
+/* Reusable components stylings */
+.title {
+  position: relative;
+}
+
+.title-back-text {
+  text-transform: capitalize;
+  color: var(--color-primary);
+  font-family: var(--secondary-font);
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: -4rem;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.title-main {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 31.25em) {
+  .title-back-text {
+    font-size: 6.5rem;
+  }
+
+  .title-main {
+    font-size: 3.5rem;
+  }
+}
+/* End of reusable components stylings */
+
 .header-contact {
   display: flex;
   justify-content: space-between;
@@ -265,3 +304,9 @@ body {
   line-height: 2;
 }
 /* End of meal categories section stylings */
+
+/* Special meals section */
+.special-dishes-section {
+  padding: 10rem 5rem;
+}
+/* End of special meals section */
