@@ -309,4 +309,80 @@ body {
 .special-dishes-section {
   padding: 10rem 5rem;
 }
+
+@media screen and (max-width: 25em) {
+  .special-dishes-section {
+    padding: 10rem 2rem;
+  }
+}
+
+.special-dishes-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.special-dish-card {
+  --special-dish-card-length: 35rem;
+  width: var(--special-dish-card-length);
+  height: var(--special-dish-card-length);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.special-dish-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+
+.special-dish-card:hover img {
+  transform: scale(1.2);
+}
+
+.special-dish-card-details {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-dish-price {
+  --special-dish-price-length: 12rem;
+  width: var(--special-dish-price-length);
+  height: var(--special-dish-price-length);
+  background-color: var(--color-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: all 0.4s;
+}
+
+.special-dish-card:hover .special-dish-price {
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+}
+
+.special-dish-title {
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.4rem;
+}
 /* End of special meals section */
