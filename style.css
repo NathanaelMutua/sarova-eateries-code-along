@@ -23,6 +23,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
