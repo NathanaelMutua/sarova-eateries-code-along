@@ -72,6 +72,22 @@ body {
 }
 /* End of reusable components stylings */
 
+/* Header styling  to make it's position fixed*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white-light);
+}
+
+body {
+  padding-top: 10rem;
+}
+/* End of header position styling */
+
 .header-contact {
   display: flex;
   justify-content: space-between;
