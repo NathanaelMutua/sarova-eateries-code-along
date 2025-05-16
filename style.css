@@ -19,7 +19,7 @@ html {
   --color-grey: #d8dbdd;
   --color-grey-dark: #797877;
   --color-black-main: #000000;
-  --color-black-light: ##262626;
+  --color-black-light: #262626;
 }
 
 body {
@@ -579,3 +579,75 @@ body {
   cursor: pointer;
 }
 /* End of newsletter section stylings */
+
+/* Footer */
+.footer {
+  background-color: var(--color-black-light);
+  padding: 5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col {
+  width: 30%;
+}
+
+@media screen and (max-width: 53.125em) {
+  .footer-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.footer-title {
+  color: var(--color-white);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+.footer-text {
+  color: var(--color-grey);
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.opening-hour {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opening-hour span:first-child {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-nav-item {
+  margin-bottom: 1rem;
+}
+
+.footer-nav-item a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-copyright a {
+  color: inherit;
+}
+/* End of footer */
