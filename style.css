@@ -651,3 +651,64 @@ body {
   color: inherit;
 }
 /* End of footer */
+
+/* Start of floating socials */
+
+.socials {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: translateX(5px);
+  opacity: 0.9;
+}
+
+.fb { 
+  background-color: #3b5998; 
+}
+
+.ig { 
+  background-color: #e4405f; 
+}
+
+.wa { 
+  background-color: #25D366; 
+}
+
+.linkedin {
+  background-color: #3d74ec; 
+}
+
+.twitter {
+  color: black;
+  background-color: #ececec; 
+}
+
+@media screen and (max-width: 920px) {
+  .socials {
+    display: none;
+  }
+}
+
+/* End of floating socials */
