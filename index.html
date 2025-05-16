@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-contact">
         <div class="header-contact-item">
           <i class="fa-solid fa-phone"></i>
@@ -44,7 +44,7 @@
           <ol class="header-nav-list">
             <li class="header-nav-list-item"><a href="#">home</a></li>
             <li class="header-nav-list-item"><a href="#">about</a></li>
-            <li class="header-nav-list-item"><a href="#">menu</a></li>
+            <li class="header-nav-list-item"><a href="#menu">menu</a></li>
             <li class="header-nav-list-item"><a href="#">stories</a></li>
             <li class="header-nav-list-item"><a href="#">contact</a></li>
             <li><a href="#" class="header-cta-btn">Book a table</a></li>
@@ -56,6 +56,10 @@
         </button>
       </div>
     </header>
+
+    <a href="#header" class="scroll-to-top">
+      &uarr;
+    </a>
 
     <!-- Hero section -->
     <section class="hero-section">
@@ -194,7 +198,7 @@
     <!-- end of special dishes section -->
 
     <!-- Menu section -->
-    <section class="menu-section">
+    <section class="menu-section" id="menu">
       <div class="title">
         <span class="title-back-text">specialties</span>
         <h2 class="title-main">our menu</h2>

@@ -20,6 +20,7 @@ html {
   --color-grey-dark: #797877;
   --color-black-main: #000000;
   --color-black-light: #262626;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -170,6 +171,27 @@ body {
   border-radius: 5px;
   font-weight: 600;
 }
+
+/* Scroll to top button */
+.scroll-to-top {
+  --scroll-to-top-length: 6rem;
+  width: var(--scroll-to-top-length);
+  height: var(--scroll-to-top-length);
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 4rem;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 100000000;
+}
+/* End of scroll to top button */
 
 /* Hero section stylings */
 .hero-section {
