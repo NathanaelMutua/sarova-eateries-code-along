@@ -28,6 +28,111 @@ html {
   color: var(--color-white);
 }
 
+/* start of dark-mode styling */
+.dark-mode{
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Great Vibes", cursive;
+  --color-primary: #cf1d16;
+  --color-primary-light: #d33e34;
+  --color-white: #fff;
+  --color-white-light: #262626;
+  --color-white-lighter: #393939;
+  --color-grey: #bcbcbc;
+  --color-grey-dark: #070605;
+  --color-black-main: #ffffff;
+  --color-black-light: #5e5e5e;
+}
+
+.dark-mode .header-contact{
+  background-color: var(--color-black-light);
+}
+
+.dark-mode .header-contact-item i{
+  color: var(--color-black-main);
+}
+
+.dark-mode .header-contact-item p{
+  color: var(--color-black-main);
+}
+
+.dark-mode #theme-btn{
+  background-color: var(--color-black-main)
+}
+
+.dark-mode #theme-btn .fa-moon{
+  display: none;
+}
+
+.dark-mode #theme-btn .fa-sun{
+  display: block;
+  color: var(--color-white-light);
+}
+
+.dark-mode .meal-categories{
+  background-color: var(--color-grey-dark);
+}
+
+.dark-mode .meal-category-item img{
+  filter: invert(10%) brightness(1000%);
+}
+
+.dark-mode .meal-category-item p{
+  color: var(--color-black-main);
+}
+
+.dark-mode .special-dishes-section{
+  background-color: var(--color-black-light);
+}
+
+.dark-mode .menu-section{
+  background-color: var(--color-grey-dark);
+  margin: 0;
+  padding: 10rem 5rem;
+}
+
+.dark-mode .title-main{
+  color: var(--color-white);
+}
+
+.dark-mode .menu-card{
+  background-color: var(--color-grey);
+}
+
+.dark-mode .chefs-section{
+  background-color: var(--color-black-light);
+  margin: 0;
+  padding: 10rem 0;
+}
+
+.dark-mode .chef-name{
+  color: var(--color-white);
+}
+
+.dark-mode .about-container-wrapper{
+  background-color: var(--color-grey-dark);
+}
+
+.dark-mode .about-subtitle{
+  color: var(--color-grey);
+}
+
+.dark-mode .about-description{
+  color: var(--color-white);
+}
+
+.dark-mode .newsletter-section{
+  background-color: var(--color-white);
+}
+
+.dark-mode .footer{
+  background-color: var(--color-grey-dark);
+}
+/* end of dark-mode styling */
+
+.dark-mode .button{  /*slightly naming */
+  color: var(--color-grey-dark);
+}
+
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
@@ -783,6 +888,10 @@ body {
 /* Attention Grabber Banner end */
 
 /* the about section*/
+.about-container-wrapper{
+  padding-top: 8rem;
+}
+
 .about-container {
   display: flex;
   justify-content: center;
@@ -848,10 +957,12 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 @media (max-width: 768px) {
@@ -877,17 +988,22 @@ body {
   color: var(--color-black-main);
   outline: none;
   width: 2.5rem;
-  height: 2rem;
+  height: 2.5rem;
   border: none;
   padding: 0.5rem 1rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #theme-btn:hover {
   background-color: var(--color-white-lighter);
-  transition: ease-in-out 1s;
+  transition: ease-in-out .5s;
+}
+
+#theme-btn .fa-sun{
+  display: none;
 }
 
 /*end of them*/

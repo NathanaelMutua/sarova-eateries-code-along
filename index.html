@@ -21,7 +21,7 @@
     />
   </head>
 
-  <body>
+  <body class="dark-mode">
     <!--Attention grabber banner-->
     <div class="marquee-wrapper-container">
       <marquee behavior="scroll" direction="left">
@@ -53,12 +53,15 @@
         <nav class="header-nav">
           <ol class="header-nav-list">
             <li class="header-nav-list-item"><a href="#">home</a></li>
-            <li class="header-nav-list-item"><a href="#">about</a></li>
+            <li class="header-nav-list-item"><a href="#about">about</a></li>
             <li class="header-nav-list-item"><a href="#menu">menu</a></li>
             <li class="header-nav-list-item"><a href="#">stories</a></li>
-            <li class="header-nav-list-item"><a href="#">contact</a></li>
+            <li class="header-nav-list-item"><a href="#reach-out">contact</a></li>
             <li>
-              <button id="theme-btn"><i class="fa-solid fa-moon"></i></button>
+              <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+              </button>
             </li>
             <li><a href="#" class="header-cta-btn">Book a table</a></li>
           </ol>
@@ -434,7 +437,7 @@
     <!-- End of the chefs section -->
 
     <!--our about section-->
-    <section class="about-container-wrapper">
+    <section class="about-container-wrapper" id="about">
       <div class="title">
         <span class="title-back-text">Whats</span>
         <h2 class="title-main">About Us</h2>
@@ -459,7 +462,7 @@
     <!--end of about section-->
 
     <!-- Newsletter section -->
-    <section class="newsletter-section">
+    <section class="newsletter-section" id="reach-out">
       <h3 class="newsletter-section-title">subscribe to our newsletter</h3>
       <p class="newsletter-text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
