@@ -108,6 +108,14 @@ html {
   color: var(--color-white);
 }
 
+.dark-mode .chef-position{
+  color: var(--color-primary-light);
+}
+
+.dark-mode .chef-social-link{
+  color: var(--color-white);
+}
+
 .dark-mode .about-container-wrapper{
   background-color: var(--color-grey-dark);
 }
@@ -126,6 +134,30 @@ html {
 
 .dark-mode .footer{
   background-color: var(--color-grey-dark);
+}
+
+.dark-mode #theme-btn:hover {
+  background-color: var(--color-grey-dark);
+  transition: ease-in-out .5s;
+}
+
+.dark-mode #theme-btn i:hover {
+  color: var(--color-white);
+  transition: ease-in-out .5s;
+}
+
+.dark-mode .marquee-wrapper-container{
+  background-color: var(--color-white-light);
+  color: var(--color-white);
+}
+
+.dark-mode .social-btn{
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.dark-mode .footer-title{
+  color: var(--color-primary);
 }
 /* end of dark-mode styling */
 
